@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#256141">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" src="./style.css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="16x20">
+    <title>Rampver Financials | KCON 2019</title>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TDNB9LX');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand" href="#">
+                <img src="./img/rf-logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto order-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://facebook.com/rampverfinancials" target="_blank">Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://youtube.com/c/rampverfinancials" target="_blank">Youtube</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://instagram/rampverfinancials" target="_blank">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- start of QR form -->
+
+    <div class="container px-3">
+        <p class="text-center px-3">
+            <div class="container">
+                <br>
+                <!-- start of partner section -->
+                <div class="container-fluid" data-aos="fade-up">
+                    <p class="text-center">
+                        <img class="img-fluid partner" src="./img/brave.png"></img>
+                    </p>
+                </div>
+                <!-- end of partner section -->
+                <h4 class="text-center claimHeader" data-aos="fade-up">Thank you for visiting our booth!</h4>
+                <p class="text-secondary text-center mt-4 mb-0" data-aos="fade-up">Fill out the form below to receive your special gift, and get a chance to win amazing prizes!</p>
+
+
+                <!-- START -->
+                <form action="https://rampver.com/kcon-2019-qr-scan-system/#wpcf7-f11904-o1" method="post" data-aos="fade-up">
+                    <div style="display: none;">
+                        <input type="hidden" name="_wpcf7" value="11904">
+                        <input type="hidden" name="_wpcf7_version" value="5.1.4">
+                        <input type="hidden" name="_wpcf7_locale" value="en_US">
+                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f11904-o1">
+                        <input type="hidden" name="_wpcf7_container_post" value="0">
+                    </div>
+                    <br>
+
+                    <div class="form-group mb-3">
+                        <input type="hidden" name="event" class="d-none" id="event" value="KCON 2019">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="salutation" class="claimHeader">Salutation</label>
+                        <select class="form-control" id="salutation" name="salutation" placeholder="--please select">
+                          <option value="">--please select--</option>
+                          <option value="Mr.">Mr.</option>
+                          <option value="Ms.">Ms.</option>
+                          <option  value="Mrs.">Mrs.</option>
+                          <option value="M.">M.</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="claimHeader">Full Name</label>
+                        <input type="text" name="prospectname" class="form-control" id="FN" placeholder="Full Name" required onkeyup="validatorFN()">
+                        <small class="d-none text-danger font-italic" id="errMsgFN">Invalid input.</small>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="claimHeader">Email Address</label>
+                        <input type="email" name="email" placeholder="Email Address" id="emailOne" class="form-control" required onkeyup="validatorEmail()">
+                        <small class="d-none text-danger font-italic" id="errMsgEmail">Invalid input.</small>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="claimHeader">Contact Number</label>
+                        <input type="text" name="contact" placeholder="09xxxxxxxxx" id="contact" class="form-control" required onkeyup="validatorContact()">
+                        <small class="d-none text-danger font-italic" id="errMsgContact">Invalid input.</small>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="claimHeader">Birthday</label>
+                        <input type="date" name="birthday" placeholder="" id="birthday" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="claimHeader">RF Code (optional)</label>
+                        <input type="text" name="rfcode" id="RFCode" class="form-control" placeholder="---" onkeyup="validatorRFCode()">
+                        <small class="d-none text-danger font-italic" id="errMsgRFCode">Invalid input.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="claimHeader">Message</label>
+                        <textarea type="text" name="message" id="message" class="form-control" placeholder="Your Message" onkeyup="validatorMessage()"></textarea>
+                        <small class="d-none text-danger font-italic" id="errMsgMessage">Invalid input.</small>
+                    </div>
+
+                    <br>
+
+                    <div class="form-check" data-aos="fade-up">
+                        <input type="checkbox" class="form-check-input" name="privacy" id="privacy" required>
+                        <small class="text-secondary font-italic form-check-label" for="privacy">I agree to receive regular updates, promotions, and recommendations from Rampver Financials. Visit <a href="rampver.com/privacy">rampver.com/privacy</a>  for more info. </small>
+                    </div>
+
+                    <p class="text-center mt-4 mb-4" data-aos="fade-up">
+                        <input type="submit" value="Send the gift to my email!" id="trigger" class="text-white btn primerSubmit font-weight-bold btn-lg" onclick="preloader()">
+                    </p>
+
+
+                </form>
+                <!-- END -->
+            </div>
+    </div>
+    </p>
+    </div>
+
+    <p class="text-center">
+        <img src="./img/preloader.gif" id="preloader" class="d-none" style="width: 25px;">
+    </p>
+
+    <br>
+
+    <!-- start of partner section -->
+    <div class="container-fluid" data-aos="fade-up">
+        <br>
+        <p class="text-center text-secondary">This event is made possible by:</p>
+        <br>
+        <p class="text-center">
+            <img class="img-fluid partner" src="./img/partner-logos.png"></img>
+        </p>
+        <br>
+    </div>
+    <!-- end of partner section -->
+
+    <footer>
+        <p class="text-white text-center ">Rampver Financials &copy; 2019</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- VALIDATOR JS START -->
+    <script>
+        function validatorFN() {
+            var x = document.getElementById("FN");
+            x.value = (x.value.toUpperCase()).replace(/^\s+/g, '');
+            output = (x.value).split(" ").join("");
+            xoutput = output.search("=")
+            if (xoutput != -1) {
+                document.getElementById("errMsgFN").classList.remove('d-none');
+                document.getElementById("trigger").classList.add('d-none');
+            } else {
+                document.getElementById("trigger").classList.remove('d-none');
+                document.getElementById("errMsgFN").classList.add('d-none');
+            }
+        };
+
+        function validatorEmail() {
+            var x = document.getElementById("emailOne");
+            x.value = (x.value.toLowerCase()).replace(/^\s+/g, '');
+            output = (x.value).split(" ").join("");
+            xoutput = output.search("=")
+            if (xoutput != -1) {
+                document.getElementById("errMsgEmail").classList.remove('d-none');
+                document.getElementById("trigger").classList.add('d-none');
+            } else {
+                document.getElementById("trigger").classList.remove('d-none');
+                document.getElementById("errMsgEmail").classList.add('d-none');
+            }
+        };
+
+        function validatorContact() {
+            var x = document.getElementById("contact");
+            x.value = (x.value.toUpperCase()).replace(/^\s+/g, '');
+            output = (x.value).split(" ").join("");
+            xoutput = output.search("=")
+            if (xoutput != -1) {
+                document.getElementById("errMsgContact").classList.remove('d-none');
+                document.getElementById("trigger").classList.add('d-none');
+            } else {
+                document.getElementById("trigger").classList.remove('d-none');
+                document.getElementById("errMsgContact").classList.add('d-none');
+            }
+        };
+
+        function validatorRFCode() {
+            var x = document.getElementById("RFCode");
+            x.value = (x.value.toUpperCase()).replace(/^\s+/g, '');
+            output = (x.value).split(" ").join("");
+            xoutput = output.search("=")
+            if (xoutput != -1) {
+                document.getElementById("errMsgRFCode").classList.remove('d-none');
+                document.getElementById("trigger").classList.add('d-none');
+            } else {
+                document.getElementById("trigger").classList.remove('d-none');
+                document.getElementById("errMsgRFCode").classList.add('d-none');
+            }
+        };
+
+        function validatorMessage() {
+            var x = document.getElementById("message");
+            xoutput = output.search("=")
+            if (xoutput != -1) {
+                document.getElementById("errMsgMessage").classList.remove('d-none');
+                document.getElementById("trigger").classList.add('d-none');
+            } else {
+                document.getElementById("trigger").classList.remove('d-none');
+                document.getElementById("errMsgMessage").classList.add('d-none');
+            }
+        };
+
+        function preloader() {
+            document.getElementById("preloader").classList.remove('d-none');
+            // setTimeout(() => {
+            //     document.getElementById("preloader").classList.add('d-none');
+            // }, 10000);
+        };
+    </script>
+    <!-- VALIDATOR JS END -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b2291eba76.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDNB9LX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp">
+    </script>
+</body>
+
+</html>
